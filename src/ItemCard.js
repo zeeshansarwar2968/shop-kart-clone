@@ -38,15 +38,13 @@ export default function ItemCard({name,price,salePrice,rating,onSale, getCount})
               
                 <h5 className="fw-bolder">{name}</h5>
                 
-                { (rating == 5) ?
+                
                     <div className="d-flex justify-content-center small text-warning mb-2">
-                        <div className="bi-star-fill"></div>
-                        <div className="bi-star-fill"></div>
-                        <div className="bi-star-fill"></div>
-                        <div className="bi-star-fill"></div>
-                        <div className="bi-star-fill"></div>
-                    </div> : null
-                }
+                        
+                    {
+                        [...Array(rating).keys()].map((i) => (<div className="bi-star-fill"></div>))
+                    }
+                    </div>
                 
                 <span className="text-muted text-decoration-line-through">{salePrice}</span>
                 {price}
