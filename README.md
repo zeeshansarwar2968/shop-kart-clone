@@ -1,4 +1,4 @@
-# shop-kart-clone
+# Shop-Kart-Clone
 
 Task: To clone a sample online shopping store UI with addded functionality of adding product ot cart.
 
